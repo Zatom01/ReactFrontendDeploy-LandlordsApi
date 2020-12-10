@@ -33,7 +33,7 @@ const addLandlord = (landlord) => {
 
 export const createLandlord = (landlordData) => {
     return (dispatch) => {
-        fetch('http://localhost:3001/users', {
+        fetch('BASE_URL/users', {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
