@@ -8,7 +8,7 @@ export class Navbar extends Component {
 
     render() {
 
-        let link;
+        // let link;
         // this.props.landlord ?
         return (
             <nav className="justify-content-center">

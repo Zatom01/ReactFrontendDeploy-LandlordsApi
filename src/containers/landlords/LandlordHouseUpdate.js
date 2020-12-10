@@ -26,7 +26,7 @@ export class LandlordHouseUpdate extends Component {
 
         const landlordId = this.props.location.state.landlordId
         const houseId = this.props.location.state.houseId
-        const house = this.state
+        // const house = this.state
 
         if (this.state.state !== "" && this.state.city !== "" && this.state.address !== "" && this.state.number_of_tenants !== "") {
             const house = this.state

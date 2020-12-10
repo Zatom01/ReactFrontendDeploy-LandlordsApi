@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchlandlordhouses, removelandlordhouse } from '../../actions/landlords'
 import { LandlordHouseDisplay } from '../../components/landlord/LandlordHouseDisplay'
-import HouseForm from './HouseForm'
-import Navbar from '../../components/Navbar'
+// import HouseForm from './HouseForm'
+// import Navbar from '../../components/Navbar'
 import { NavLink } from 'react-router-dom'
 
 
@@ -19,7 +19,7 @@ export class LandlordHousesList extends Component {
     }
 
     render() {
-        const houseForm = <HouseForm />
+        // const houseForm = <HouseForm />
         const houses = this.props.houses.map((house) => {
             return (<LandlordHouseDisplay removelandlordhouse={this.props.removelandlordhouse} landlordId={house.user_id} address={house.address} city={house.city} state={house.state} numberOfTenants={house.number_of_tenants} houseId={house.id} />
             )
