@@ -33,7 +33,7 @@ const addLandlord = (landlord) => {
 
 export const createLandlord = (landlordData) => {
     return (dispatch) => {
-        fetch('BASE_URL/users', {
+        fetch(BASE_URL + '/users', {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -57,7 +57,7 @@ const addLandlordHouse = house => {
 
 export const createLandlordHouse = (landlord_id, house) => {
     return (dispatch) => {
-        fetch(`BASE_URL/users/${landlord_id}/houses`, {
+        fetch(BASE_URL + `/users/${landlord_id}/houses`, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -83,7 +83,7 @@ const deleteLandlord = (id) => {
 
 export const removeLandlord = id => {
     return (dispatch) => {
-        return fetch(`BASE_URL/users/${id}`, {
+        return fetch(BASE_URL + `/users/${id}`, {
             method: 'DELETE',
         })
             .then(resp => dispatch(deleteLandlord(id)))
@@ -99,7 +99,7 @@ const deleteLandlordHouse = id => {
 
 export const removelandlordhouse = (landlordId, houseId) => {
     return (dispatch) => {
-        return fetch(`BASE_URL/users/${landlordId}/houses/${houseId}`, {
+        return fetch(BASE_URL + `/users/${landlordId}/houses/${houseId}`, {
             method: 'DELETE',
         })
             .then(resp => dispatch(deleteLandlordHouse(houseId)))
@@ -116,7 +116,7 @@ export const removelandlordhouse = (landlordId, houseId) => {
 
 export const updateLandlordHouse = (landlordId, houseId, house) => {
     return (dispatch) => {
-        fetch(`BASE_URL/users/${landlordId}/houses/${houseId}`, {
+        fetch(BASE_URL + `/users/${landlordId}/houses/${houseId}`, {
             method: "PATCH",
             headers: {
                 'Accept': 'application/json',
