@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://localhost:3001'
+const BASE_URL = 'https://landlordsapp-rails-backend.herokuapp.com'
 
 export const fetchLandlords = () => {
     //thunk requires a function to be returned
@@ -57,7 +57,7 @@ const addLandlordHouse = house => {
 
 export const createLandlordHouse = (landlord_id, house) => {
     return (dispatch) => {
-        fetch(`http://localhost:3001/users/${landlord_id}/houses`, {
+        fetch(`BASE_URL/users/${landlord_id}/houses`, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -83,7 +83,7 @@ const deleteLandlord = (id) => {
 
 export const removeLandlord = id => {
     return (dispatch) => {
-        return fetch(`http://localhost:3001/users/${id}`, {
+        return fetch(`BASE_URL/users/${id}`, {
             method: 'DELETE',
         })
             .then(resp => dispatch(deleteLandlord(id)))
@@ -99,7 +99,7 @@ const deleteLandlordHouse = id => {
 
 export const removelandlordhouse = (landlordId, houseId) => {
     return (dispatch) => {
-        return fetch(`http://localhost:3001/users/${landlordId}/houses/${houseId}`, {
+        return fetch(`BASE_URL/users/${landlordId}/houses/${houseId}`, {
             method: 'DELETE',
         })
             .then(resp => dispatch(deleteLandlordHouse(houseId)))
@@ -116,7 +116,7 @@ const houseUpdate = (house) => {
 
 export const updateLandlordHouse = (landlordId, houseId, house) => {
     return (dispatch) => {
-        fetch(`http://localhost:3001/users/${landlordId}/houses/${houseId}`, {
+        fetch(`BASE_URL/users/${landlordId}/houses/${houseId}`, {
             method: "PATCH",
             headers: {
                 'Accept': 'application/json',
