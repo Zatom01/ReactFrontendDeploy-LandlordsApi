@@ -3,6 +3,7 @@ import LandlordCard from '../../components/landlord/LandlordCard'
 import { connect } from 'react-redux'
 import LandlordForm from './LandlordForm'
 import { reset_houses } from '../../actions/landlords'
+import './LandlordList.css'
 
 export class LandlordList extends Component {
 
@@ -10,7 +11,9 @@ export class LandlordList extends Component {
     componentDidMount() {
         this.props.reset_houses()
     }
+
     render() {
+
 
         if (this.props.loading) {
             return <div>Loading...</div>

@@ -42,24 +42,24 @@ export class LandlordForm extends Component {
             <div>
                 <form onSubmit={this.handleSubmit.bind(this)} >
                     <div>
-                        <label htmlFor="name">Name: </label>
-                        <input type="text" name="name" id="name" class="form-control" value={this.state.name} onChange={this.handleChange} />
+                        <label htmlFor="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-control" value={this.state.name} onChange={this.handleChange} />
                     </div> <br />
 
 
                     <div>
-                        <label htmlFor="age">Age: </label>
-                        <input type="text" name="age" id="age" class="form-control" value={this.state.age} onChange={this.handleChange} />
+                        <label htmlFor="age"></label>
+                        <input type="text" name="age" id="age" placeholder="Age" class="form-control" value={this.state.age} onChange={this.handleChange} />
                     </div><br />
 
                     <div>
-                        <label htmlFor="state">State: </label>
-                        <input type="text" name="state" id="state" class="form-control" value={this.state.state} onChange={this.handleChange} />
+                        <label htmlFor="state"></label>
+                        <input type="text" name="state" id="state" placeholder="State" class="form-control" value={this.state.state} onChange={this.handleChange} />
                     </div><br />
 
                     <div>
-                        <label htmlFor="city">City: </label>
-                        <input type="text" name="city" id="city" class="form-control" value={this.state.city} onChange={this.handleChange} />
+                        <label htmlFor="city"></label>
+                        <input type="text" name="city" id="city" placeholder="City" class="form-control" value={this.state.city} onChange={this.handleChange} />
                     </div>
 
                     <br />

@@ -1,5 +1,6 @@
 
-const BASE_URL = 'https://landlordsapp-rails-backend.herokuapp.com'
+// const BASE_URL = 'https://landlordsapp-rails-backend.herokuapp.com'
+const BASE_URL = 'http://localhost:3001'
 
 export const fetchLandlords = () => {
     //thunk requires a function to be returned

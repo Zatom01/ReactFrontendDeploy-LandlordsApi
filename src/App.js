@@ -10,6 +10,7 @@ import { fetchLandlords } from './actions/landlords'
 import LandlordHousesList from './containers/houses/LandlordHousesList';
 import HouseForm from './containers/houses/HouseForm'
 import LandlordHouseUpdate from './containers/landlords/LandlordHouseUpdate';
+import './App.css'
 
 
 
@@ -27,12 +28,16 @@ class App extends Component {
     return (
       <Router>
         <div>
+
           <div class="d-flex justify-content-center align-items-center" >
             <Navbar />
           </div>
 
           <div class="d-flex justify-content-center align-items-center">
+            <img src='images/img-landlord.jpg'/>
+
             <Switch>
+
               <Route exact path="/" component={Home} />
               <Route exact path="/landlords" component={LandlordList} />
               <Route exact path="/landlords/new" component={LandlordForm} />
