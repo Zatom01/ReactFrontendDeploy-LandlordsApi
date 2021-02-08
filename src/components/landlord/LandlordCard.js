@@ -21,13 +21,13 @@ class LandlordCards extends Component {
                     id: this.props.landlord.id
                 }
             }} >
-                Name: {this.props.landlord.name}
+                {this.props.landlord.name}
 
             </NavLink>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 
-            <button onClick={this.handleClick} class="btn btn-danger">Remove Landlord</button>
+            <button onClick={this.handleClick} class="btn btn-danger">Delete {this.props.landlord.name}</button>
         </li >)
 
     }
