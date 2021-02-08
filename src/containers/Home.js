@@ -6,6 +6,7 @@ export class Home extends Component {
     render() {
         return (
             <div>
+
                 <h3>Welcome to the LandLords Database App</h3>
                 {/* <Counter /> */}
 
