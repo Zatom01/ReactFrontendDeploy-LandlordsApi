@@ -28,10 +28,12 @@ export class LandlordList extends Component {
                 <div>
 
                     <h3>Here are the list of the LandLords</h3>
+
                     <ul>
-                        {landlords}
+                       <li>{landlords}</li>
                     </ul>
-                    <br />
+
+
                     <h3>Add Landlord</h3>
                     <LandlordForm />
                 </div>

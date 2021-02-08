@@ -27,7 +27,7 @@ class LandlordCards extends Component {
             <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 
-            <button onClick={this.handleClick} class="btn btn-danger">Delete {this.props.landlord.name}</button>
+            <button onClick={this.handleClick} class="btn btn-outline-danger">Delete {this.props.landlord.name}</button>
         </li >)
 
     }
