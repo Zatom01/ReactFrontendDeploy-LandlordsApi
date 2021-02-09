@@ -27,14 +27,14 @@ export class LandlordList extends Component {
             return (
                 <div>
 
-                    <h3>Here are the list of the LandLords</h3>
+                    <h3 class="text-muted row justify-content-center">Here are the list of the LandLords</h3>
 
                     <ul>
                        <li>{landlords}</li>
                     </ul>
 
 
-                    <h3>Add Landlord</h3>
+                    <h3 class="text-muted row justify-content-center">Add Landlord</h3>
                     <LandlordForm />
                 </div>
             )

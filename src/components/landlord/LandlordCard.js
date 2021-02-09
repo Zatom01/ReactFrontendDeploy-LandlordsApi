@@ -21,7 +21,7 @@ class LandlordCards extends Component {
                     id: this.props.landlord.id
                 }
             }} >
-                {this.props.landlord.name}
+               {this.props.landlord.name}
 
             </NavLink>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>

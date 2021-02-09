@@ -39,16 +39,14 @@ export class LandlordShow extends Component {
     render() {
         return (
             <ul>
-                <h3>Name: {this.state.landlord.name}</h3>
+                <br />
+                <h3 class="text-muted row justify-content-center">Name: {this.state.landlord.name}</h3>
                 <li>Age: {this.state.landlord.age}</li>
                 <li>State: {this.state.landlord.state}</li>
                 <li>City: {this.state.landlord.city}</li>
                 <li>Number of Houses owned: {this.props.houseNumber}</li>
                 <li><LandlordHousesList landlord_id={this.state.landlord.id} /></li>
                 <li>Owner id: {this.state.landlord.id}</li>
-
-
-
             </ul>
 
         )

@@ -7,7 +7,7 @@ export class Home extends Component {
         return (
             <div>
 
-                <h3>Welcome to the LandLords Database App</h3>
+                <h3 class="text-muted row justify-content-center">Welcome to the LandLords Database App</h3>
                 {/* <Counter /> */}
 
             </div>
