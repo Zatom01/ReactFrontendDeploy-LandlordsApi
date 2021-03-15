@@ -12,7 +12,7 @@ export class Navbar extends Component {
         // let link;
         // this.props.landlord ?
         return (
-            <nav className="navbar">
+            <nav class="navbar navbar-light">
 
                 <NavLink className="inactive" activeClassName="active" to="/">Home</NavLink> <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
