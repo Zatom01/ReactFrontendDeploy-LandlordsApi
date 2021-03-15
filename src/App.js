@@ -34,7 +34,7 @@ class App extends Component {
           </div>
 
           <div class="d-flex justify-content-center align-items-center">
-            <img src='images/img-landlord.jpg'/>
+            {/* <img src='images/img-landlord.jpg'/> */}
 
             <Switch>
 

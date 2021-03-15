@@ -64,8 +64,11 @@ export class LandlordForm extends Component {
 
                     <br />
                     <br />
+                    <div>
+                        <input type="submit" value="Create Landlord" class="btn btn-primary" />
 
-                    <input type="submit" value="Create Landlord" class="btn btn-primary" />
+                    </div>
+                    
 
 
 
