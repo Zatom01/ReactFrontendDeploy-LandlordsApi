@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { updateLandlordHouse } from '../../actions/landlords'
 
 export class LandlordHouseUpdate extends Component {
-
     state = {
         state: this.props.location.state.state,
         city: this.props.location.state.city,
@@ -15,9 +14,18 @@ export class LandlordHouseUpdate extends Component {
 
     handleChange = event => {
         event.preventDefault()
-        this.setState({
-            [event.target.name]: event.target.value
-        })
+        if(event.target.name === "number_of_tenants"){
+            this.setState({
+                [event.target.name]: parseInt(event.target.value)
+            })
+        }
+        else{
+            this.setState({
+
+                [event.target.name]: event.target.value
+
+            })
+        }
 
     }
 
@@ -28,12 +36,10 @@ export class LandlordHouseUpdate extends Component {
         const houseId = this.props.location.state.houseId
         // const house = this.state
 
+
         if (this.state.state !== "" && this.state.city !== "" && this.state.address !== "" && this.state.number_of_tenants !== "") {
             const house = this.state
-
             this.props.updateLandlordHouse(landlordId, houseId, house)
-
-
             this.setState({
                 state: "",
                 city: "",
@@ -69,7 +75,7 @@ export class LandlordHouseUpdate extends Component {
 
                     <div>
                         <label htmlFor="number_of_tenants">Number of Tenants: </label>
-                        <input type="text" name="number_of_tenants" id="number_of_tenants" class="form-control" value={this.state.number_of_tenants} onChange={this.handleChange} />
+                        <input type="number" name="number_of_tenants" id="number_of_tenants" class="form-control" value={this.state.number_of_tenants} onChange={this.handleChange} />
                     </div>
 
                     <br />

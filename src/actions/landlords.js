@@ -107,13 +107,13 @@ export const removelandlordhouse = (landlordId, houseId) => {
     }
 }
 
-// const houseUpdate = (house) => {
-//     return {
-//         type: "UPDATE_LANDLORD_HOUSE",
-//         house
-//     }
+const houseUpdate = (house) => {
+    return {
+        type: "UPDATE_LANDLORD_HOUSE",
+        house
+    }
 
-// }
+}
 
 export const updateLandlordHouse = (landlordId, houseId, house) => {
     return (dispatch) => {
@@ -128,7 +128,7 @@ export const updateLandlordHouse = (landlordId, houseId, house) => {
         })
             .then(resp => resp.json())
             .then(house => {
-                dispatch(addLandlordHouse(house))
+                dispatch(houseUpdate(house))
             })
     }
 }
